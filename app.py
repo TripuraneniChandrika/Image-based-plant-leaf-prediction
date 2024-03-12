@@ -16,7 +16,7 @@ from tflearn.layers.estimator import regression
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from twilio.rest import Client
-account_sid = "ACe4cd5f8d160458bf1470987cfe969db7"
+account_sid = ""// twilio account id
 auth_token = "447e21d0b0bbecb236a1123cee9bcdb6"
 client = Client(account_sid, auth_token)
 
@@ -178,8 +178,8 @@ def leaf_disease():
                 "Rotate yoour tomato plants yearly to prevent re-infection next year.", 
                 "Use copper fungicites"]
                 client.api.account.messages.create(
-                                                to="+91-7993557128",
-                                                from_="+15077065830",
+                                                to="",
+                                                from_="",
                                                 body="Bacterial  disease, copper fungicites")
 
 
@@ -192,8 +192,8 @@ def leaf_disease():
                 "Spray insecticides such as organophosphates", 
                 "carbametes during the seedliing stage.", "Use copper fungicites"]
                 client.api.account.messages.create(
-                                                to="+91-7993557128",
-                                                from_="+15077065830",
+                                                to="",
+                                                from_="",
                                                 body="curl_virus  disease, organophosphates and carbametes")
 
                 
